@@ -1,0 +1,330 @@
+<?xml version="1.0"?>
+<!-- Level Setup -->
+<Level>
+
+  <!-- Entity Templates -->
+  <Templates>
+    <!-- Units -->
+	<EntityTemplate Type="Unit" Name="Player" Mesh="Characters\\Player\\WerewolfBrother\\particle.x" />
+	<EntityTemplate Type="Unit" Name="Player2" Mesh="Characters\\Player\\VampireBrother\\particle.x" />
+	<EntityTemplate Type="Unit" Name="Stando" Mesh="Characters\\Player\\WerewolfBrother\\particle.x" />
+	<EntityTemplate Type="Unit" Name="Stando2" Mesh="Characters\\Player\\VampireBrother\\particle.x" />
+	<EntityTemplate Type="Unit" Name="Zombie" Mesh="Characters\\Monsters\\Zombie\\particle.x"/>
+    <!-- Environment Types -->
+    <EntityTemplate Type="Generic" Name="Stars" Mesh="Stars.x"/>
+	<EntityTemplate Type="Generic" Name="Skybox" Mesh="Skybox.x"/>
+    <EntityTemplate Type="Generic" Name="Floor" Mesh="Floor.x"/>
+    <EntityTemplate Type="Generic" Name="Atmosphere" Mesh="Atmosphere.x"/>
+	<EntityTemplate Type="Generic" Name="Background" Mesh="background.x"/>
+    <EntityTemplate Type="Planet" Name="Earth" Mesh="Earth.x"/>
+    <EntityTemplate Type="Planet" Name="Clouds" Mesh="Clouds.x"/>
+    <EntityTemplate Type="Planet" Name="Sun" Mesh="Sun_0deg.x"/>
+	
+		<EntityTemplate Type="UI" Name="Face" Mesh="Characters\\Player\\CHARACTER_UI\\FaceJotaroLeft.x" />
+		<EntityTemplate Type="UI" Name="FaceDio" Mesh="Characters\\Player\\CHARACTER_UI\\FaceJotaroLeft.x" />
+		<EntityTemplate Type="UI" Name="FaceRight" Mesh="Characters\\Player\\CHARACTER_UI\\FaceJotaroRight.x" />
+		<EntityTemplate Type="UI" Name="FaceDioRight" Mesh="Characters\\Player\\CHARACTER_UI\\FaceJotaroRight.x" />		
+		<EntityTemplate Type="UI" Name="HpBar" Mesh="Characters\\Player\\CHARACTER_UI\\Hp_BarLeft.x" />
+		<EntityTemplate Type="UI" Name="UltMeter" Mesh="Characters\\Player\\CHARACTER_UI\\Ult_MeterLeft.x"/>
+
+		<EntityTemplate Type="UI" Name="HpBarRight" Mesh="Characters\\Player\\CHARACTER_UI\\Hp_BarRight.x" />
+		<EntityTemplate Type="UI" Name="UltMeterRight" Mesh="Characters\\Player\\CHARACTER_UI\\Ult_MeterRight.x"/>
+	    <EntityTemplate Type="UI" Name="Shield" Mesh="Characters\\Player\\CHARACTER_UI\\Shield.x"/>
+		<EntityTemplate Type="UI" Name="ShieldDio" Mesh="Characters\\Player\\CHARACTER_UI\\ShieldDio.x"/>
+		
+		<EntityTemplate Type="UI" Name="IntroVideo" Mesh="UI//Intro//intro.x"/>
+		<EntityTemplate Type="UI" Name="ModeSelect" Mesh="UI//MenuItems//menuItem.x"/>
+		<EntityTemplate Type="UI" Name="JotaroSelect" Mesh="UI//MenuItems//menuItemJotaroSelect.x"/>
+		<EntityTemplate Type="UI" Name="DioSelect" Mesh="UI//MenuItems//menuItemDioSelect.x"/>
+    <!-- Utility Types -->
+	
+	<EntityTemplate Type ="Utility" Name="ShadowDropPoint" Mesh="Dummy.x"/>
+    <EntityTemplate Type ="Utility" Name="ZaWarudoSphere"  Mesh="Sphere.x"/>
+    <EntityTemplate Type="Utility" Name="TBCScreen" Mesh="UI//tbcscreen.x"/> 
+	<EntityTemplate Type="Utility" Name="TBCArrow" Mesh="UI//tbcarrow.x"/> 
+	<EntityTemplate Type ="Utility" Name="KnivesRight" Mesh="KnivesRight.x"/>
+	<EntityTemplate Type ="Utility" Name="KnivesLeft" Mesh="KnivesLeft.x"/>
+    <EntityTemplate Type ="Utility" Name="ZaWarudoSphere"  Mesh="Sphere.x"/>
+    <!-- Scenery Types -->
+    <!-- Houses -->
+	
+	<EntityTemplate Type="House" Name="House" Mesh="Exterior\\Houses\\MedievalHouse.x"/>
+	<EntityTemplate Type="House" Name="Jeep" Mesh="4x4jeep.x"/>
+	
+	<!-- Trees -->
+	
+	<EntityTemplate Type="Tree" Name="GnarlyTree" Mesh="Exterior\\Trees\\GnarlyTree.x"/>
+  
+    <EntityTemplate Type="Tree" Name="Tree" Mesh="Tree.x"/>
+
+    <!-- Other Types -->
+    <EntityTemplate Type="Object" Name="ParaCube" Mesh="Cube.x"/>
+	<EntityTemplate Type="Object" Name="ParaCube1" Mesh="Cube1.x"/>
+
+
+  </Templates>
+  <!-- End of Entity Types -->
+
+  
+  <!-- Scene Setup -->
+  <Entities>
+    
+	
+	<Entity Type="Player" Name="Player">
+      <Position X="-5000.0" Y="10000.0" Z="200000.0"/>
+      <Rotation X="0.0" Y="180.0" Z="180.0"/>
+      <Scale X="2.0" Y="2.0" Z="2.0"/>
+	  </Entity>
+	<Entity Type="Stando" Name="Stando">
+      <Position X="-5000.0" Y="10000.0" Z="200000.0"/>
+      <Rotation X="0.0" Y="180.0" Z="180.0"/>
+      <Scale X="2.0" Y="2.0" Z="2.0"/>
+	  </Entity>
+	  <Entity Type="Player2" Name="Player2">
+      <Position X="-5000.0" Y="10000.0" Z="200000.0"/>
+      <Rotation X="0.0" Y="180.0" Z="180.0"/>
+      <Scale X="2.0" Y="2.0" Z="2.0"/>
+	  </Entity>
+	  <Entity Type="Stando2" Name="Stando2">
+      <Position X="-5000.0" Y="10000.0" Z="200000.0"/>
+      <Rotation X="0.0" Y="180.0" Z="180.0"/>
+      <Scale X="2.0" Y="2.0" Z="2.0"/>
+	  </Entity>
+	
+	<Entity Type="Skybox" Name="Skybox">
+      <Position X="0.0" Y="-30000.0" Z="0.0"/>
+      <Rotation X="0.0" Y="-180.0" Z="0.0"/>
+      <Scale X="30.0" Y="30.0" Z="30.0"/>
+	  </Entity>
+    
+	
+    <Entity Type="Floor" Name="Floor">
+      <Position X="0.0" Y="-0.4" Z="0.0"/>
+      <Scale X="20.0" Y="20.0" Z="20.0"/>
+    </Entity>
+	
+	<!-- LEVEL 1 -->
+	
+	<!-- Houses -->
+	
+	<Entity Type="House" Name="House">
+      <Position X="0.0" Y="-0.4" Z="350.0"/>
+	  <Rotation X="0.0" Y="180.0" Z="0.0"/>
+      <Scale X="0.35" Y="0.35" Z="0.35"/>
+    </Entity>
+		<Entity Type="House" Name="House22">
+      <Position X="-450.0" Y="-0.4" Z="850.0"/>
+	  <Rotation X="0.0" Y="34.0" Z="0.0"/>
+      <Scale X="0.35" Y="0.35" Z="0.35"/>
+    </Entity>
+	<Entity Type="House" Name="House0">
+      <Position X="-250.0" Y="-0.4" Z="1550.0"/>
+	  <Rotation X="0.0" Y="234.0" Z="0.0"/>
+      <Scale X="0.35" Y="0.35" Z="0.35"/>
+    </Entity>
+	<Entity Type="House" Name="House2">
+      <Position X="-50.0" Y="110.4" Z="130.0"/>
+	  <Rotation X="12.0" Y="4.0" Z="76.0"/>
+      <Scale X="0.35" Y="0.35" Z="0.35"/>
+    </Entity>
+	<Entity Type="House" Name="House3">
+      <Position X="-150.0" Y="1110.4" Z="1230.0"/>
+	  <Rotation X="132.0" Y="412.0" Z="76.0"/>
+      <Scale X="0.35" Y="0.35" Z="0.35"/>
+    </Entity>
+	<Entity Type="House" Name="House4">
+      <Position X="20.0" Y="40.4" Z="230.0"/>
+	  <Rotation X="32.0" Y="412.0" Z="7216.0"/>
+      <Scale X="0.35" Y="0.35" Z="0.35"/>
+    </Entity>
+	<Entity Type="House" Name="House5">
+      <Position X="-5.0" Y="210.4" Z="650.0"/>
+	  <Rotation X="122.0" Y="41.0" Z="746.0"/>
+      <Scale X="0.35" Y="0.35" Z="0.35"/>
+    </Entity>
+	<Entity Type="House" Name="House5">
+      <Position X="215.0" Y="410.4" Z="350.0"/>
+	  <Rotation X="12.0" Y="412.0" Z="5416.0"/>
+      <Scale X="0.35" Y="0.35" Z="0.35"/>
+    </Entity>
+	<Entity Type="House" Name="House5">
+      <Position X="315.0" Y="110.4" Z="850.0"/>
+	  <Rotation X="1212.0" Y="912.0" Z="16.0"/>
+      <Scale X="0.35" Y="0.35" Z="0.35"/>
+    </Entity>
+		<Entity Type="House" Name="House5">
+      <Position X="35.0" Y="510.4" Z="1850.0"/>
+	  <Rotation X="112.0" Y="92.0" Z="1642.0"/>
+      <Scale X="0.35" Y="0.35" Z="0.35"/>
+    </Entity>
+		<Entity Type="House" Name="House5">
+      <Position X="325.0" Y="-10.4" Z="150.0"/>
+	  <Rotation X="312.0" Y="1.0" Z="12.0"/>
+      <Scale X="0.35" Y="0.35" Z="0.35"/>
+    </Entity>
+		<Entity Type="House" Name="House5">
+      <Position X="5.0" Y="100.4" Z="250.0"/>
+	  <Rotation X="2.0" Y="121.0" Z="122.0"/>
+      <Scale X="0.35" Y="0.35" Z="0.35"/>
+    </Entity>
+	<Entity Type="Jeep" Name="House5">
+      <Position X="5.0" Y="100.4" Z="250.0"/>
+	  <Rotation X="102.0" Y="121.0" Z="122.0"/>
+      <Scale X="10.35" Y="10.35" Z="10.35"/>
+    </Entity>
+	<Entity Type="Jeep" Name="House5">
+      <Position X="115.0" Y="1020.4" Z="1250.0"/>
+	  <Rotation X="10221.0" Y="43121.0" Z="1222.0"/>
+      <Scale X="10.35" Y="10.35" Z="10.35"/>
+    </Entity>
+		<Entity Type="Jeep" Name="House5">
+      <Position X="-15.0" Y="102.4" Z="50.0"/>
+	  <Rotation X="101.0" Y="43.0" Z="1222.0"/>
+      <Scale X="10.35" Y="10.35" Z="10.35"/>
+    </Entity>
+		<Entity Type="Jeep" Name="House5">
+      <Position X="-75.0" Y="302.4" Z="450.0"/>
+	  <Rotation X="10121.0" Y="443.0" Z="2.0"/>
+      <Scale X="10.35" Y="10.35" Z="10.35"/>
+    </Entity>
+	<Entity Type="Jeep" Name="House5">
+      <Position X="25.0" Y="52.4" Z="10.0"/>
+	  <Rotation X="10121.0" Y="443.0" Z="2.0"/>
+      <Scale X="10.35" Y="10.35" Z="10.35"/>
+    </Entity>
+    <!-- Trees -->
+	<Entity Type="GnarlyTree" Name="GnarlyTree0">
+      <Position X="100.0" Y="-0.4" Z="50.0"/>
+       <Scale X="10.0" Y="10.0" Z="10.0"/>
+    </Entity>
+	<Entity Type="GnarlyTree" Name="GnarlyTree0">
+      <Position X="-100.0" Y="-0.4" Z="50.0"/>
+       <Scale X="10.0" Y="10.0" Z="10.0"/>
+    </Entity>
+	<Entity Type="GnarlyTree" Name="GnarlyTree1">
+      <Position X="300.0" Y="-0.4" Z="50.0"/>
+       <Scale X="10.0" Y="10.0" Z="10.0"/>
+    </Entity>
+	<Entity Type="GnarlyTree" Name="GnarlyTree2">
+      <Position X="500.0" Y="-0.4" Z="50.0"/>
+       <Scale X="10.0" Y="10.0" Z="10.0"/>
+    </Entity>
+	<Entity Type="GnarlyTree" Name="GnarlyTree2">
+      <Position X="-50.0" Y="-0.4" Z="250.0"/>
+       <Scale X="10.0" Y="20.0" Z="10.0"/>
+    </Entity>
+	<Entity Type="GnarlyTree" Name="GnarlyTree3">
+      <Position X="10.0" Y="-0.4" Z="250.0"/>
+       <Scale X="10.0" Y="10.0" Z="10.0"/>
+    </Entity>
+	<Entity Type="GnarlyTree" Name="GnarlyTree4">
+      <Position X="900.0" Y="-0.4" Z="50.0"/>
+       <Scale X="10.0" Y="40.0" Z="10.0"/>
+    </Entity>
+	
+    <!-- Object Positions -->
+    
+    <Entity Type="ShadowDropPoint" Name="ShadowDropPoint1">
+      <Position X="130.0" Y="90.0" Z="250.0"/>
+	<Scale X="1.00" Y="1.00" Z="1.00"/>
+	 </Entity>
+	 <Entity Type="TBCScreen" Name="TBCScreen">
+      <Position X="-1300.0" Y="-900.0" Z="-2500.0"/>
+	<Scale X="10.00" Y="10.00" Z="10.00"/>
+	 </Entity>
+	 <Entity Type="TBCArrow" Name="TBCArrow">
+      <Position X="-1300.0" Y="-900.0" Z="-2500.0"/>
+	   <Rotation X="0.0" Y="180.0" Z="180.0"/>
+	<Scale X="2.00" Y="1.00" Z="1.00"/>
+	</Entity>
+	<!--Player UI -->
+	<Entity Type="Face" Name="PlayerFaceLeft">
+      <Position X="-5.0" Y="50.62" Z="-148.0"/>
+	   <Rotation X="0.0" Y="180.0" Z="180.0"/>
+	<Scale X="0.015" Y="0.015" Z="0.015"/>
+	 </Entity>
+	 <Entity Type="HpBar" Name="PlayerHpBarLeft">
+   <Position X="-5.64" Y="51.5" Z="-145.0"/>
+	   <Rotation X="0.0" Y="180.0" Z="180.0"/>
+	<Scale X="0.27" Y="0.05" Z="0.05"/>
+	 </Entity>
+	 <Entity Type="UltMeter" Name="PlayerUltMeterLeft">
+     <Position X="-7.1" Y="47.75" Z="-145.0"/>
+	   <Rotation X="0.0" Y="180.0" Z="180.0"/>
+	<Scale X="0.25" Y="0.1" Z="0.1"/>
+	 </Entity>
+	 <Entity Type="Shield" Name="PlayerShieldJotaro">
+      <Position X="-1300.0" Y="-900.0" Z="-2500.0"/>
+	   <Rotation X="0.0" Y="180.0" Z="180.0"/>
+	<Scale X="2" Y="2" Z="2"/>
+	 </Entity>
+      <Entity Type="ZaWarudoSphere" Name="ZaWarudoSphere">
+      <Position X="-1300.0" Y="-900.0" Z="-2500.0"/>
+	   <Rotation X="0.0" Y="180.0" Z="180.0"/>
+	<Scale X="0.5" Y="0.5" Z="0.5"/>
+	 </Entity>
+	     <Entity Type="KnivesRight" Name="KnivesRight">
+      <Position X="-1300.0" Y="-900.0" Z="-2500.0"/>
+	   <Rotation X="0.0" Y="180.0" Z="180.0"/>
+	<Scale X="1.5" Y="1.5" Z="1.5"/>
+	 </Entity>
+       <Entity Type="KnivesLeft" Name="KnivesLeft">
+      <Position X="-1300.0" Y="-900.0" Z="-2500.0"/>
+	   <Rotation X="0.0" Y="180.0" Z="180.0"/>
+	<Scale X="1.5" Y="1.5" Z="1.5"/>
+	 </Entity>
+	 
+	 
+	
+	 <Entity Type="FaceRight" Name="PlayerFaceRight">
+      <Position X="5.0" Y="50.62" Z="-148.0"/>
+	   <Rotation X="0.0" Y="180.0" Z="180.0"/>
+	<Scale X="0.015" Y="0.015" Z="0.015"/>
+	 </Entity>
+	 <Entity Type="HpBarRight" Name="PlayerHpBarRight">
+      <Position X="5.64" Y="51.5" Z="-145.0"/>
+	   <Rotation X="0.0" Y="180.0" Z="180.0"/>
+	<Scale X="0.27" Y="0.05" Z="0.05"/>
+	 </Entity>
+	 <Entity Type="UltMeterRight" Name="PlayerUltMeterRight">
+      <Position X="7.1" Y="47.75" Z="-145.0"/>
+	   <Rotation X="0.0" Y="180.0" Z="180.0"/>
+	<Scale X="0.25" Y="0.1" Z="0.1"/>
+	 </Entity>
+	 <Entity Type="ShieldDio" Name="PlayerShieldDio">
+      <Position X="-1300.0" Y="-900.0" Z="-2500.0"/>
+	   <Rotation X="0.0" Y="180.0" Z="180.0"/>
+	<Scale X="2" Y="2" Z="2"/>
+	</Entity>
+	 <Entity Type="IntroVideo" Name="IntroVideo">
+      <Position X="0.0" Y="48.5" Z="-130"/>
+	   <Rotation X="-4.0" Y="180.0" Z="180.0"/>
+	<Scale X="2.35" Y="1.70" Z="0.0"/>
+	 </Entity>
+	  <Entity Type="ModeSelect" Name="ModeSelect">
+      <Position X="0.0" Y="-11148.5" Z="-130"/>
+	   <Rotation X="-4.0" Y="180.0" Z="180.0"/>
+	<Scale X="0.75" Y="0.5" Z="1.0"/>
+	 </Entity>
+	 <Entity Type="JotaroSelect" Name="JotaroSelect">
+      <Position X="0.0" Y="-11148.5" Z="-130"/>
+	   <Rotation X="-4.0" Y="180.0" Z="180.0"/>
+	<Scale X="0.4" Y="0.25" Z="1.0"/>
+	 </Entity>
+	 <Entity Type="DioSelect" Name="DioSelect">
+      <Position X="0.0" Y="-11148.5" Z="-130"/>
+	   <Rotation X="-4.0" Y="180.0" Z="180.0"/>
+	<Scale X="0.4" Y="0.25" Z="1.0"/>
+	 </Entity>
+	<!-- FOG -->
+	
+   
+
+    <!-- Scenery Positions -->
+    
+    
+
+  </Entities>
+  <!-- End of Scene Setup -->
+
+</Level>
